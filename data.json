@@ -1,0 +1,712 @@
+{
+    "currentUser": {
+        "nick": "Me",
+        "bgUserToken": "EDA7038A68188EA9FD563C8DF498DF1AF8BFACBE3D50E30B6486FBBC67540316",
+        "place": 27,
+        "score": 2100,
+        "lastDate": "13.03.2023 15:50:39"
+    },
+    "allScore": 20100000,
+    "data": [{
+            "nick": "qwesfdsdfsdfsdfsdfsdfsdfsdf",
+            "bgUserToken": "FCD17F006603A4315E14066908C2F11F9FB40B578949F4868B81DBB923A95D63",
+            "place": 1,
+            "score": 26000,
+            "lastDate": "09.03.2023 13:35:04"
+        },
+        {
+            "nick": "Janisdffffffffffffk",
+            "bgUserToken": "099495288DBD96D48464FE962E48403B406F22AFB0E591433AB658832A571804",
+            "place": 2,
+            "score": 18400,
+            "lastDate": "09.03.2023 14:20:43"
+        },
+        {
+            "nick": "asdertttttttttttt",
+            "bgUserToken": "FE2844FE1822F7331B20649B01539B5DC46D8C96F84DA542E406CA0D5EF6156C",
+            "place": 3,
+            "score": 16000,
+            "lastDate": "09.03.2023 13:57:12"
+        },
+        {
+            "nick": "\u0425\u044D\u043D\u0441\u0438\u043A",
+            "bgUserToken": "8517020B054207E5DA11FA331425C5923D3025F5582FFEC0B472F1C62484D02E",
+            "place": 4,
+            "score": 55000,
+            "lastDate": "09.03.2023 14:05:10"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "1EB6CEC0215F457C2EE525493A0784A549340499E0A4081B2188D2D2B16C86B7",
+            "place": 5,
+            "score": 41000,
+            "lastDate": "09.03.2023 13:10:07"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "0D58AC51F0E2D3CE098A54C3D39908D04E4C2C5B3A4CD64FB4E6F4A353EEE346",
+            "place": 6,
+            "score": 37000,
+            "lastDate": "09.03.2023 13:57:12"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "E90A458968E8735A56D0D1BDE09903A24FABF11EFF9ABC28F3D77282FAAAC477",
+            "place": 7,
+            "score": 31000,
+            "lastDate": "09.03.2023 14:00:06"
+        },
+        {
+            "nick": "\u0423\u043B\u044C\u044F\u043D\u0430",
+            "bgUserToken": "2CB3E982BF9ECAADB8F753F75F5309F5901264F607C7D607FB838713D9A128A9",
+            "place": 8,
+            "score": 2250,
+            "lastDate": "09.03.2023 13:32:03"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "C4559F3C6095D3AE7F9B27F5ECE5C5890CBA8EE1A53074EB28C41A07EA6BD480",
+            "place": 9,
+            "score": 2250,
+            "lastDate": "09.03.2023 14:15:07"
+        },
+        {
+            "nick": "nick196504",
+            "bgUserToken": "1CE334A4C6998987188956A4713CE97503444F847629216B4275DA8F1397EC81",
+            "place": 10,
+            "score": 1300,
+            "lastDate": "09.03.2023 14:17:03"
+        },
+        {
+            "nick": "nic",
+            "bgUserToken": "D785E029D83391A09FEA85D50D09C45456959EC7065407995BBB277ABBE0B8A7",
+            "place": 11,
+            "score": 1250,
+            "lastDate": "09.03.2023 13:15:06"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "7C21FFE3287B2103D3B1FA65331367D563D441690111C21D69930448A8D09CDD",
+            "place": 12,
+            "score": 1250,
+            "lastDate": "09.03.2023 13:30:08"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "40EB9AA6B4F1110D436D25C169443145E29F00392B00318024155A5EECDBED9C",
+            "place": 13,
+            "score": 1250,
+            "lastDate": "09.03.2023 13:55:04"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "8F70DD5194B17268969DCF0E7CD0B90407C99D84462E31D8F960D6A92F20A882",
+            "place": 14,
+            "score": 1250,
+            "lastDate": "09.03.2023 13:55:05"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "3C030A068B5D6AB196B0D348A4C8662F0CE9F818364FF6915820482885B63A16",
+            "place": 15,
+            "score": 1150,
+            "lastDate": "09.03.2023 14:20:09"
+        },
+        {
+            "nick": "nick957571",
+            "bgUserToken": "8C29612007412F2DBB72F857FC12997EAB945A377EAFECA6046EB4D59925F7CD",
+            "place": 16,
+            "score": 1050,
+            "lastDate": "09.03.2023 14:10:10"
+        },
+        {
+            "nick": "Gagarin",
+            "bgUserToken": "205F84E6B8C80003871ACFDD1FB102C85DDB0C89D5AFCFB726A91371664C7831",
+            "place": 17,
+            "score": 1050,
+            "lastDate": "09.03.2023 14:17:13"
+        },
+        {
+            "nick": "ArDa0919",
+            "bgUserToken": "4507A75C9BC10C011330850D1B6C70A3C4B28BB5D79734A8D4D8E595EA5C003C",
+            "place": 18,
+            "score": 1000,
+            "lastDate": "09.03.2023 13:07:05"
+        },
+        {
+            "nick": "Serik",
+            "bgUserToken": "1405D6CCCC89BBF6DC64E927A16D049E15D5D417A0269B9D051D347451B2C6C0",
+            "place": 19,
+            "score": 1000,
+            "lastDate": "09.03.2023 13:20:04"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "A3595842E7B46B09DF27917F4B3C37A109B3F4121FBAAA431355C78CDA9D1F89",
+            "place": 20,
+            "score": 1000,
+            "lastDate": "09.03.2023 13:30:07"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "99D25FC652D38882FF141DDF74F3B1B542072A899725BEF67C935A1FD92E4AC6",
+            "place": 21,
+            "score": 1000,
+            "lastDate": "09.03.2023 14:07:07"
+        },
+        {
+            "nick": "Phoenix",
+            "bgUserToken": "50FD6701DABE4571548DA9740879686B9168CC7BEED593994F7407306BE3276B",
+            "place": 22,
+            "score": 1000,
+            "lastDate": "09.03.2023 14:12:06"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "7F33EE95F6062D23F254E35756B150D96AD3061EC08C49D2EA7A8D0684835C9E",
+            "place": 23,
+            "score": 1000,
+            "lastDate": "09.03.2023 14:22:06"
+        },
+        {
+            "nick": "nick649349",
+            "bgUserToken": "54A86C3D4E4600772906434F6B64CA0700E464E508A4E6B57375935D0195D230",
+            "place": 24,
+            "score": 950,
+            "lastDate": "09.03.2023 14:12:04"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "4C0E02FBCE5CD8CC55A4EF443DD6FADEF69AE29BCADC8E015CE8A93A03B270EE",
+            "place": 25,
+            "score": 750,
+            "lastDate": "09.03.2023 13:37:05"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "531329AA1E0EFCE10087A933B4203C46F31C90FF46ECCB5447E2039C3F25FA46",
+            "place": 26,
+            "score": 750,
+            "lastDate": "09.03.2023 13:45:04"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "3EA13C049CD7D4E1350F014B72F24D86E74BCA8F2EC92E9D58E520D054209353",
+            "place": 27,
+            "score": 750,
+            "lastDate": "09.03.2023 13:57:08"
+        },
+        {
+            "nick": "Moonli",
+            "bgUserToken": "942447C50E5C54B54A679D0AB555D499E2B2CAD02703479E392B6E9E0F52DA20",
+            "place": 28,
+            "score": 700,
+            "lastDate": "09.03.2023 14:22:06"
+        },
+        {
+            "nick": "\u041C\u0435\u043D0791",
+            "bgUserToken": "610A767AC92631B8D4AEC9BE14A470033F4943893678075370EEC3D5744B7CB6",
+            "place": 29,
+            "score": 600,
+            "lastDate": "09.03.2023 13:42:11"
+        },
+        {
+            "nick": "nick34927",
+            "bgUserToken": "DDFF30BAAF9C72140C98ED5F977024580D5DD98DF931ED32A238FC0043836147",
+            "place": 30,
+            "score": 600,
+            "lastDate": "09.03.2023 14:21:09"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "4E185593FEEC0FC18363D19B7D4A0DA78D79C82E37FBDAD981FBA4E0FF75063D",
+            "place": 31,
+            "score": 500,
+            "lastDate": "09.03.2023 13:05:08"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "143DAABAD61D05700D470692263B69398F66629BF422B71F92BCDD1E2DBF234A",
+            "place": 32,
+            "score": 500,
+            "lastDate": "09.03.2023 13:42:03"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "0425381E4A4E7ED92E6195524258680742E5F50950F21BF776F941461CE25200",
+            "place": 33,
+            "score": 500,
+            "lastDate": "09.03.2023 13:42:10"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "5AB890B134983FC40F0766D995BE0421D5F4B1D5B63D8C109E01778B6A77A272",
+            "place": 34,
+            "score": 500,
+            "lastDate": "09.03.2023 13:45:06"
+        },
+        {
+            "nick": "nick742064",
+            "bgUserToken": "B0D38D0427AA153AA3A71FD0A9CD84B060B17B5B0498C5C505F706B69219FFDA",
+            "place": 35,
+            "score": 500,
+            "lastDate": "09.03.2023 14:05:14"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "9D1485274603BEAA51FA98FF32EB63080ECD7A0D9960B4653A94E1CB6A041687",
+            "place": 36,
+            "score": 500,
+            "lastDate": "09.03.2023 14:07:04"
+        },
+        {
+            "nick": "jennar540",
+            "bgUserToken": "1752D13CDB2CDCFBB29D41264383D0EA2B60C3C40841A8CB4C01467F288448A6",
+            "place": 37,
+            "score": 500,
+            "lastDate": "09.03.2023 14:10:09"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "956C5FE327C0431809BCF86D3DEE88951828570C3F35019DF460F825C1F6144C",
+            "place": 38,
+            "score": 500,
+            "lastDate": "09.03.2023 14:12:06"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "DAF4DFCC9A96880135BC0E9560016ED995E700C67AAC94328E0776115E8E8D5B",
+            "place": 39,
+            "score": 500,
+            "lastDate": "09.03.2023 14:15:07"
+        },
+        {
+            "nick": "\u0410\u043B\u0435\u043A\u0441\u0430",
+            "bgUserToken": "32757074D4C5A1E9FF7A9544024EAF022802D9E46D7972F6066E9589672BC9C2",
+            "place": 40,
+            "score": 500,
+            "lastDate": "09.03.2023 14:17:10"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "EE80867504603BDD3E3A76DE48881842439E554279A465D5DA119C5237BAA122",
+            "place": 41,
+            "score": 450,
+            "lastDate": "09.03.2023 14:07:05"
+        },
+        {
+            "nick": "Zzz333",
+            "bgUserToken": "ABB82635FA040C8A4587DE6C6446E1DE4E4FC455354705E64A1D6D9F58953739",
+            "place": 42,
+            "score": 400,
+            "lastDate": "09.03.2023 14:00:05"
+        },
+        {
+            "nick": "Vasiliy 88",
+            "bgUserToken": "CE19DED968D90E40C18D02BE7F02AD27A3E0411885F97A09C8725E0ECC21E458",
+            "place": 43,
+            "score": 400,
+            "lastDate": "09.03.2023 14:17:15"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "9C21D29EAA003A88B1D80DB4C16164541739D73535889F5D256994BC7011E757",
+            "place": 44,
+            "score": 350,
+            "lastDate": "09.03.2023 14:10:10"
+        },
+        {
+            "nick": "Assetb13",
+            "bgUserToken": "700AFFB1A6EF58FAF4571F91BB6A057D6A48D5DCF0BFEC291E19E5A07052FC74",
+            "place": 45,
+            "score": 350,
+            "lastDate": "09.03.2023 14:22:04"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "962594E401C69C2A1C529DDD17448359203BB20BB12536B1096CFF26A732F3C1",
+            "place": 46,
+            "score": 300,
+            "lastDate": "09.03.2023 13:30:05"
+        },
+        {
+            "nick": "Baga",
+            "bgUserToken": "54C407D8183834E8C0A5CA0BE2DE6A4D1475076F1F8EBE3BD2D9E21884159A9E",
+            "place": 47,
+            "score": 300,
+            "lastDate": "09.03.2023 14:22:05"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "FFA4102A9D8315B5FD1D53C27CA234782D6232D7C6D65466085305982F55B8DB",
+            "place": 48,
+            "score": 250,
+            "lastDate": "09.03.2023 13:17:03"
+        },
+        {
+            "nick": "\u041F\u043E\u043D\u0447\u0438\u043A",
+            "bgUserToken": "DB601BB3454F57CB24870387C5ACE0681361EE2D744711F737615C356ADA7C54",
+            "place": 49,
+            "score": 250,
+            "lastDate": "09.03.2023 13:17:04"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "CBF6222808722704E64A6C05021A04170F8611CA8E7595022B178BFE14A13587",
+            "place": 50,
+            "score": 250,
+            "lastDate": "09.03.2023 13:32:03"
+        },
+        {
+            "nick": "Argentinian 001",
+            "bgUserToken": "94997EAF3F469B9EE448B4ADBB6608AFE3D019A2FCC3842020C8F7E1C6C5347B",
+            "place": 51,
+            "score": 250,
+            "lastDate": "09.03.2023 13:32:04"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "6C6316837FC50609F590C31ACAC94A9980BDAFA02761D278948344AC4372953C",
+            "place": 52,
+            "score": 250,
+            "lastDate": "09.03.2023 13:37:04"
+        },
+        {
+            "nick": "nick641714",
+            "bgUserToken": "FDDF0A055DEA94BBECB9E9AA8D3D6E0670FFA4261A3D3CF5793CA38705472319",
+            "place": 53,
+            "score": 250,
+            "lastDate": "09.03.2023 13:42:10"
+        },
+        {
+            "nick": "nick260128",
+            "bgUserToken": "71AA46C1FE627052CDEADB1A70B6858FC203666E257B02216B0EA5C563E03EBE",
+            "place": 54,
+            "score": 250,
+            "lastDate": "09.03.2023 13:45:06"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "8478FEC438BE77B08A2D0158C01543590187DD5E05F72B858489211F68624757",
+            "place": 55,
+            "score": 250,
+            "lastDate": "09.03.2023 13:47:09"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "2486621FD79D036D2FC8A4FD3B13D737F613762F009D46CA83568CF50BC840E0",
+            "place": 56,
+            "score": 250,
+            "lastDate": "09.03.2023 14:07:07"
+        },
+        {
+            "nick": "nick186109",
+            "bgUserToken": "F4B4C4C435634705EA912B0A48FE87968F02C1FAECD12888CF2B0A658F861ED1",
+            "place": 57,
+            "score": 250,
+            "lastDate": "09.03.2023 14:10:08"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "31AFA81916A1795E1C11CBAE5F576E86A47332057D349E1E0D9FAAC1065438E8",
+            "place": 58,
+            "score": 250,
+            "lastDate": "09.03.2023 14:10:10"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "09042F3212E7E431F29371B54319BDDB0502812F82BD10630B93276891B5F703",
+            "place": 59,
+            "score": 250,
+            "lastDate": "09.03.2023 14:12:05"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "AB5273A8195C8B8A68C6EA54541428300A29B249046978936CA76991D5D51A86",
+            "place": 60,
+            "score": 250,
+            "lastDate": "09.03.2023 14:20:11"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "11A3AD0D093A3FB1B8CF23B40FAB59E813C646B3EDECA4728DEBCDCE6F6AA52B",
+            "place": 61,
+            "score": 200,
+            "lastDate": "09.03.2023 13:47:10"
+        },
+        {
+            "nick": "Z1971Z",
+            "bgUserToken": "03BA900208BFE0133CB673580B4AA5F259C9ED59AEB3B054177629C47CB46425",
+            "place": 62,
+            "score": 200,
+            "lastDate": "09.03.2023 13:47:11"
+        },
+        {
+            "nick": "nick793736",
+            "bgUserToken": "9D59AC4F8444BA8A6923FF5CAB589052E623E723035BB9D0FB7DF548333B60A2",
+            "place": 63,
+            "score": 200,
+            "lastDate": "09.03.2023 14:05:18"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "94E9903C4F1D8FBF73E33FC905A372CF94005B6034772B4F629C7E608FCC2064",
+            "place": 64,
+            "score": 200,
+            "lastDate": "09.03.2023 14:07:04"
+        },
+        {
+            "nick": "asemai040594",
+            "bgUserToken": "24DA9AF80531F12C23A3FEAEFF47C2B745B3CB4B00BC45DC2D5FF7C645FA1224",
+            "place": 65,
+            "score": 200,
+            "lastDate": "09.03.2023 14:12:04"
+        },
+        {
+            "nick": "nick111299",
+            "bgUserToken": "8292030B32631D7FE4E0E730F708A8B30843955CF700E447ACF3CB452DC44D8B",
+            "place": 66,
+            "score": 200,
+            "lastDate": "09.03.2023 14:22:06"
+        },
+        {
+            "nick": "nick679712",
+            "bgUserToken": "6D6F375EC4709EDEFE40F8C88128A32ECB120A00C580153A092EB258DDB21792",
+            "place": 67,
+            "score": 150,
+            "lastDate": "09.03.2023 13:30:05"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "D4D24331AFA1786C0F5FE3E3E6DB94B2B36BB05B8E86C98BAB50B6C216974647",
+            "place": 68,
+            "score": 100,
+            "lastDate": "09.03.2023 13:10:04"
+        },
+        {
+            "nick": "Korjik",
+            "bgUserToken": "0E2C04860FBC47E4173DF9E7239AD75ABD2741B8B8653F0803CB6745E1665E01",
+            "place": 69,
+            "score": 100,
+            "lastDate": "09.03.2023 13:20:04"
+        },
+        {
+            "nick": "Nick2056",
+            "bgUserToken": "5F6094726DAC797F523BB5ED4D1FACF9AA959956CB80CA2E53004CFC035154EC",
+            "place": 70,
+            "score": 100,
+            "lastDate": "09.03.2023 13:22:03"
+        },
+        {
+            "nick": "Alexxx",
+            "bgUserToken": "78461B1968D9876E050BE6FB4444FF896DE4DE041333C4D5610AD16105C1C4E6",
+            "place": 71,
+            "score": 100,
+            "lastDate": "09.03.2023 13:45:05"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "C4C1C8CD1773B88BFCCA213A65448424ADB36333A6CF4F8D784A01190B2B1FE7",
+            "place": 72,
+            "score": 100,
+            "lastDate": "09.03.2023 13:47:06"
+        },
+        {
+            "nick": "nick647466",
+            "bgUserToken": "06439F2591E40437EDAF0296910143E34E6488FB71E0F5A0CD479E963406775E",
+            "place": 73,
+            "score": 100,
+            "lastDate": "09.03.2023 13:47:08"
+        },
+        {
+            "nick": "nick19672",
+            "bgUserToken": "B3948EF162083BCB70808024581C0EC2E15E83B267A43A0DD6218D6CD330987E",
+            "place": 74,
+            "score": 100,
+            "lastDate": "09.03.2023 13:50:07"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "0C9F446776084BABF74D0962AB7FDE719D44211C90A98882B9444F856C377251",
+            "place": 75,
+            "score": 100,
+            "lastDate": "09.03.2023 13:55:07"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "DB9D0FB174B63236704C473372CF0E320206415F654FC36A0A93534E0DE27872",
+            "place": 76,
+            "score": 100,
+            "lastDate": "09.03.2023 13:55:08"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "F46EA2F7219A4C10BB900E223EA350E98704AD92B3FE46860009D0EA34D17BCE",
+            "place": 77,
+            "score": 100,
+            "lastDate": "09.03.2023 13:57:08"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "0826E20096E000954CF5ECE1686E6820651D49DB215202310E45C97DC4F2C63E",
+            "place": 78,
+            "score": 100,
+            "lastDate": "09.03.2023 14:00:06"
+        },
+        {
+            "nick": "Madiyar87",
+            "bgUserToken": "7491876EFB7DF48F9BF3075555F0D88FD774B105FAA69B040F5D4946D80737C0",
+            "place": 79,
+            "score": 100,
+            "lastDate": "09.03.2023 14:05:13"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "A483D4E1581A9020B734B5743C62032A2F88A478CDCB872DA305F3720C5B0BE0",
+            "place": 80,
+            "score": 100,
+            "lastDate": "09.03.2023 14:21:37"
+        },
+        {
+            "nick": "nick974326",
+            "bgUserToken": "249A22F1D42331D20B4EBDCB6418F73C7CE618F77551C680D58252F4C15B9E46",
+            "place": 81,
+            "score": 50,
+            "lastDate": "09.03.2023 13:20:06"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "A9D03D2679297FE9033C270D2DD378EF3BF1E0E56F3954C0ED1107740B59F54B",
+            "place": 82,
+            "score": 50,
+            "lastDate": "09.03.2023 13:40:05"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "499DA2E6684F3BB20F6F7F198F0CE637EB253552D9D034123CCE0F900EB401DB",
+            "place": 83,
+            "score": 50,
+            "lastDate": "09.03.2023 13:42:07"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "6BD8C5EB6485160A05EF81A157B15A07B82C3155A55A38D503002286134161C2",
+            "place": 84,
+            "score": 50,
+            "lastDate": "09.03.2023 13:45:05"
+        },
+        {
+            "nick": "IRL",
+            "bgUserToken": "4650253F6C9C30F90E812E636C7854C070C2A8B9AAFF456E7221239E78688F47",
+            "place": 85,
+            "score": 50,
+            "lastDate": "09.03.2023 13:47:10"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "2CED7F782E680260C0FD13989C82A230C3BF64A506D1DE6DD7A953A8AC8C5139",
+            "place": 86,
+            "score": 50,
+            "lastDate": "09.03.2023 14:07:08"
+        },
+        {
+            "bgUserToken": "EDA7038A68188EA9FD563C8DF498DF1AF8BFACBE3D50E30B6486FBBC67540316",
+            "place": 87,
+            "score": 2100,
+            "lastDate": "13.03.2023 15:50:39"
+        },
+        {
+            "nick": "nick194711",
+            "bgUserToken": "C9E348A1F2B8EFA02B8BF432DB0D3CD00D6D7075772FEF07E6A9DE8543995B85",
+            "place": 88,
+            "score": 50,
+            "lastDate": "09.03.2023 14:12:05"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "63E0AEE2D48E37AB029550542442C1D721EAC8544B32AA66606E7BE92C24D146",
+            "place": 89,
+            "score": 50,
+            "lastDate": "09.03.2023 14:15:06"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "DA20EF2530BC6C104EE354FE0431B143C465B803D27A149D908F01BFE3AD3D68",
+            "place": 90,
+            "score": 50,
+            "lastDate": "09.03.2023 14:17:05"
+        },
+        {
+            "nick": "Igor71",
+            "bgUserToken": "0FF595FC97A1347729E02643024EF70F0305A777232B2DAB57A4E821AFF79183",
+            "place": 91,
+            "score": 50,
+            "lastDate": "09.03.2023 14:17:12"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "BD3C02BE0458AB784D1AF488BA0A0492D95A0D8BB7B2E929694458C329703222",
+            "place": 92,
+            "score": 0,
+            "lastDate": "09.03.2023 13:02:03"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "BD3C02BE0458AB784D1AF488BA0A0492D95A0D8BB7B2E929694458C329703222",
+            "place": 93,
+            "score": 0,
+            "lastDate": "09.03.2023 13:02:03"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "BD3C02BE0458AB784D1AF488BA0A0492D95A0D8BB7B2E929694458C329703222",
+            "place": 94,
+            "score": 0,
+            "lastDate": "09.03.2023 13:02:03"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "BD3C02BE0458AB784D1AF488BA0A0492D95A0D8BB7B2E929694458C329703222",
+            "place": 95,
+            "score": 0,
+            "lastDate": "09.03.2023 13:02:03"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "BD3C02BE0458AB784D1AF488BA0A0492D95A0D8BB7B2E929694458C329703222",
+            "place": 96,
+            "score": 0,
+            "lastDate": "09.03.2023 13:02:03"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "BD3C02BE0458AB784D1AF488BA0A0492D95A0D8BB7B2E929694458C329703222",
+            "place": 97,
+            "score": 0,
+            "lastDate": "09.03.2023 13:02:03"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "BD3C02BE0458AB784D1AF488BA0A0492D95A0D8BB7B2E929694458C329703222",
+            "place": 98,
+            "score": 0,
+            "lastDate": "09.03.2023 13:02:03"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "BD3C02BE0458AB784D1AF488BA0A0492D95A0D8BB7B2E929694458C329703222",
+            "place": 99,
+            "score": 0,
+            "lastDate": "09.03.2023 13:02:03"
+        },
+        {
+            "nick": "",
+            "bgUserToken": "BD3C02BE0458AB784D1AF488BA0A0492D95A0D8BB7B2E929694458C329703222",
+            "place": 100,
+            "score": 0,
+            "lastDate": "09.03.2023 13:02:03"
+        }
+    ],
+    "status": "OK"
+}
+
