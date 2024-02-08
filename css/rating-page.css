@@ -17,6 +17,8 @@ body {
     font-family: "Montserrat", sans-serif;
     color: #fff;
     background-color: #161D1D;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 section.winners-rating {
