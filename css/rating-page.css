@@ -57,7 +57,7 @@ button.show-more {
     text-transform: uppercase;
     border: none;
     background-color: transparent;
-    background-image: url('./assets/img/loader-bg.png');
+    background-image: url('../assets/img/loader-bg.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -139,7 +139,7 @@ ol.rating-list>li:nth-child(-n+5)::before {
     right: 0;
     width: 49px;
     height: 90%;
-    background-image: url('./assets/img/flag.png');
+    background-image: url('../assets/img/flag.png');
     background-repeat: no-repeat;
     background-position: -65px -112px;
 }
@@ -192,7 +192,7 @@ ol.rating-list>li.current-player {
     left: -20px;
     right: -20px;
     bottom: -50px;
-    background-image: url('./assets/img/current-player-bg-sm.png');
+    background-image: url('../assets/img/current-player-bg-sm.png');
     background-clip: border-box;
     background-size: cover;
     background-repeat: no-repeat;
@@ -227,7 +227,7 @@ ol.rating-list>li.current-player {
     max-width: 0;
     height: 35px;
     position: relative;
-    background-image: url('./assets/img/btn-bg.svg');
+    background-image: url('../assets/img/btn-bg.svg');
     background-repeat: no-repeat;
     background-size: contain;
     cursor: pointer;
@@ -291,7 +291,7 @@ section.winners .title::before {
     left: 0;
     top: 0;
     bottom: 0;
-    background-image: url('./assets/img/cup.svg');
+    background-image: url('../assets/img/cup.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 15px 21px;
@@ -327,7 +327,7 @@ ol.winners-list li.item .inner {
     padding: 74px 10px 10px;
     position: relative;
     background-color: #597373;
-    background-image: url('./assets/img/winners-flag.png');
+    background-image: url('../assets/img/winners-flag.png');
     background-repeat: no-repeat;
     background-position: -74px -119px;
     border-radius: 8px;
