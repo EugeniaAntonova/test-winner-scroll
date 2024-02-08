@@ -1,183 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
-
-        *, *::before, *::after {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: "Inter", sans-serif;
-            color: #fff;
-            background-color: #161D1D;
-            
-        }
-
-        section.winners-rating {
-            background-image: url('/assets/img/bg.png');
-            background-position: bottom;
-            background-size: 100%;
-            background-repeat:  no-repeat;
-            scroll-behavior: smooth;
-        }
-
-        .winners-container {
-            width: 100%;
-            max-width: 770px;
-            margin: 0 auto;
-            padding: 0 16px;
-        }
-
-        .title  {
-            margin: 0;
-            margin-bottom: 10px;
-            font-family: 'Montserrat';
-            font-size: 22px;
-            font-weight: 800;
-            text-transform: uppercase;
-        }
-
-        .winners-list-wrapper {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        button.show-more {
-            width: 100%;
-            margin-bottom: 20px;
-            padding: 16px 24px;
-            color: #fff;
-            font-family: 'Montserrat';
-            font-weight: 800;
-            font-size: 22px;
-            text-transform: uppercase;
-            border: none;
-            background-color: transparent;
-            background-image: url('/assets/img/loader-bg.png');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain;
-        }
-
-        ol.winner-list {
-            width: 100%;
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-
-        ol.winner-list > li {
-            padding: 8px 34px 16px 8px;
-            border-radius: 8px;
-            background-color: #2C3A3A;
-        }
-
-        ol.winner-list > li:not(:last-child) {
-            margin-bottom: 6px;
-        }
-
-        
-        ol.winner-list > li > .inner {
-            display: flex;
-        }
-
-        ol.winner-list > li .nick-wrapper {
-            width: 140px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        ol.winner-list > li .score-wrapper {
-            min-width: 45px;
-            margin-left: auto;
-        }
-
-        ol.winner-list > li .label {
-            display: block;
-            margin-bottom: 4px;
-            color: #ACB9B9;
-        }
-
-        ol.winner-list > li .nick,
-        ol.winner-list > li .score {
-            font-size: 14px;
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-        }
-        
-        ol.winner-list > li .place {
-            display: block;
-            width: 44px;
-            margin: auto 0;
-            flex-grow: 0;
-            flex-shrink: 0;
-            text-align: center;
-            font-family: 'Montserrat';
-            font-size: 24px;
-            font-weight: 800;
-        }
-
-        ol.winner-list > li:nth-child(-n+5) {
-            padding: 14px;
-            padding-right: 40px;
-            background-color: #597373;
-            background-image: url('/assets/img/flag.png');
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: right top;
-        }
-
-        ol.winner-list > li:nth-child(-n+5) .place {
-            width: 20px;
-            font-size: 32px;
-            line-height: 0.7;
-            margin: 0;
-            margin-bottom: auto;
-        }
-        
-        .winner-avatar {
-            width: 48px;
-            height: 48px;
-            flex-grow: 0;
-            flex-shrink: 0;
-            border-radius: 50%;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        .current-player {
-            color: red;
-            cursor: pointer;
-            position: relative;
-        }
-        
-        .current-player--ancor {
-            position: absolute;
-            inset: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/rating-page.css">
 </head>
+
 <body>
+    <section class="winners">
+        <div class="winners-container">
+            <h2 class="title">победители Lotodrive 12.01</h2>
+            <ol class="winners-list" role="list">
+            </ol>
+        </div>
+    </section>
     <section class="winners-rating">
         <div class="winners-container">
             <h2 class="title">Текущий рейтинг</h2>
-            <div class="winners-list-wrapper">
-                <ol class="winner-list" role="list"></ol>
-                <button type="button" class="show-more">Загрузить ещё</button>
-                <!-- <button type="button" class="show-less hidden">show less</button> -->
-                <p class="current-player-wrapper" id="current-player-wrapper"></p>
+            <div class="rating-list-wrapper">
+                <ol class="rating-list" role="list"></ol>
+                <div class="current-player-wrapper" id="current-player-wrapper">
+                    <h3 class="current-player-title">мое место - <span class="current-player-place"></span></h3>
+                    <div class="current-player-score-wrapper">
+                        <span class="current-player-label">Очки:</span>
+                        <span class="current-player-score"></span>
+                    </div>
+                    <div class="current-player-actions-wrapper">
+                        <div class="current-player-action up" role="button">
+                            <a href="#" id="scroll-up-link"></a>
+                            <img src="/assets/img/arrow.png" width="26" alt="">
+                        </div>
+                        <div class="current-player-action down" role="button">
+                            <img src="/assets/img/arrow.png" width="26" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -201,4 +60,5 @@
     </template>
     <script src="/js/nav.js" defer></script>
 </body>
+
 </html>

@@ -1,7 +1,10 @@
-const playersListWrapper = document.querySelector('.winners-list-wrapper');
 const currentPlayerContainer = document.querySelector('#current-player-wrapper');
-const playersList = document.querySelector('.winner-list');
+const currentPlayerAction = document.querySelector('.current-player-action.down');
+const currentPlayerScore = document.querySelector('.current-player-score');
+const currentPlayerPlace = document.querySelector('.current-player-place');
+const playersList = document.querySelector('.rating-list');
 const playerTemplate = document.querySelector('#player-template').content;
+const winnersList = document.querySelector('.winners-list');
 
 const createPlayer = (data) => {
     const { nick, place, score } = data;
@@ -13,94 +16,38 @@ const createPlayer = (data) => {
     return player;
 }
 
-const playersAmountControl = (current) => {
-    const playersLoader = document.querySelector('.show-more')
-    const playersHider = document.querySelector('.show-less')
-    const INCREMENT = 5;
-    let playersShown = 0;
-    let playersToShowNext = INCREMENT;
-    let players = playersList.children;
+const upButton = document.querySelector('.current-player-action.up');
 
-    players = [...players];
-    players.slice(INCREMENT).forEach((player) => player.classList.add('hidden'));
-    playersShown += INCREMENT;
-    playersToShowNext += INCREMENT;
-    playersLoader.classList.remove('hidden');
-
-    const restoreInitialState = () => {
-        players.slice(INCREMENT).forEach((player) => player.classList.add('hidden'));
-        playersShown = INCREMENT;
-        playersToShowNext = INCREMENT * 2;
-        document.querySelector('p.current-player').classList.remove('hidden');
-        playersLoader.classList.remove('hidden');
-        playersHider.classList.add('hidden');
-        playersHider.removeEventListener('click', restoreInitialState);
-    }
-
-    const showMoreplayers = () => {
-        players.slice(playersShown, playersToShowNext).forEach((player) => {
-            player.classList.remove('hidden');
-        });
-        playersShown += INCREMENT;
-        playersToShowNext += INCREMENT;
-        const hiddenPlayers = playersList.getElementsByClassName('hidden');
-        if (hiddenPlayers.length === 0) {
-            playersLoader.classList.add('hidden');
-            playersHider.classList.remove('hidden');
-            playersHider.addEventListener('click', restoreInitialState);
-        }
-    };
-
-    let currentPlace = current.place;
-    players[currentPlace - 1].classList.add('current-player');
-    if (currentPlace > 5) {
-        const currentPlayer = document.createElement('p');
-        currentPlayer.innerHTML = `
-        <span class="nick">${current.nick}</span>
-        <span class="place">${current.place}</span>
-        <span class="score">${current.score}</span>
-        `;
-
-        currentPlayer.classList.add('current-player');
-        currentPlayerContainer.append(currentPlayer)
-
-        if (currentPlace <= 100) {
-            const anchor = document.createElement('a');
-            anchor.classList.add('current-player--ancor');
-            anchor.href = '#current-in-the-list';
-            currentPlayer.append(anchor);
-
-            let scrollTimes = Math.floor((currentPlace - playersShown) / INCREMENT);
-            if ((currentPlace - playersShown) % INCREMENT !== 0) {
-                scrollTimes += 1;
-            }
-
-            
-            function scrollToMe() {
-                players.slice(playersShown, scrollTimes * INCREMENT + INCREMENT).forEach((player) => {
-                    player.classList.remove('hidden');
-                });
-                playersShown += (scrollTimes * INCREMENT);
-                playersToShowNext = (playersShown + INCREMENT);
-                const hiddenPlayers = playersList.getElementsByClassName('hidden');
-                if (hiddenPlayers.length === 0) {
-                    playersLoader.classList.add('hidden');
-                    playersHider.classList.remove('hidden');
-                    playersHider.addEventListener('click', restoreInitialState);
-                }
-
-                // currentPlayer.classList.add('hidden');
-                players[currentPlace - 1].classList.add('current-player');
-                players[currentPlace - 1].id = 'current-in-the-list';
-            }
-
-            anchor.addEventListener('click', scrollToMe)
-        }
-    }
-
-    playersLoader.addEventListener('click', showMoreplayers);
-
+window.onscroll = () => {
+  if (window.scrollY > 500) {
+    upButton.classList.add('ready');
+  } else {
+    upButton.classList.remove('ready');
+  }
 };
+
+const createAnchor = (current) => {
+    let players = playersList.children;
+    players[current.place - 1].id = 'current-in-the-list';
+    players[current.place - 1].classList.add('current-player')
+    
+    const anchor = document.createElement('a');
+    anchor.id = 'scroll-to-me-link';
+    anchor.href = '#current-in-the-list';
+
+    if (current.place <= 100 && current.place > 5) {
+        currentPlayerAction.append(anchor);
+        currentPlayerAction.classList.add('ready');
+        currentPlayerAction.addEventListener('click', () => {
+            currentPlayerAction.classList.remove('ready'); 
+        });
+        window.addEventListener('scroll', () => {
+            if (window.scrollY < 500) {
+                currentPlayerAction.classList.add('ready'); 
+            }
+        })
+    }
+}
 
 
 const onSuccess = (data, current, cb) => {
@@ -109,7 +56,15 @@ const onSuccess = (data, current, cb) => {
         playersList.appendChild(player);
     });
 
-    playersAmountControl(current);
+    const winners = data.slice(0,5);
+    winners.forEach(item => {
+        const winner = cb(item);
+        winnersList.appendChild(winner);
+    })
+
+    currentPlayerPlace.textContent = current.place;
+    currentPlayerScore.textContent = current.score;
+    createAnchor(current);
 }
 
 const onFail = (err) => {
@@ -136,14 +91,3 @@ const getData = async (onSuccess, onFail, cb) => {
 
 getData(onSuccess, onFail, createPlayer)
   
-//   cards.forEach((card) => { 
-//     observer.observe(card);
-//   })
-
-//   {
-//     "nick": "",
-//     "bgUserToken": "7BFDC6FFD16E86A9AB23170673186613F378FBD10B3BA2A2918764C7349124AD",
-//     "place": 87,
-//     "score": 50,
-//     "lastDate": "09.03.2023 14:10:08"
-// },

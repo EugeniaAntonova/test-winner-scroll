@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    background-color: #161D1D;
+}
+
+section.winners-rating {
+    /* background-image: url('/assets/img/bg.png'); */
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.winners-container {
+    width: 100%;
+    max-width: 688px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: 'Oswald';
+    font-size: 22px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.rating-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 56px;
+}
+
+button.show-more {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 16px 24px;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 22px;
+    text-transform: uppercase;
+    border: none;
+    background-color: transparent;
+    background-image: url('/assets/img/loader-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+ol.rating-list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ol.rating-list>li {
+    padding: 8px 34px 8px 16px;
+    border-radius: 8px;
+    background-color: #2C3A3A;
+}
+
+ol.rating-list>li:not(:last-child) {
+    margin-bottom: 6px;
+}
+
+
+ol.rating-list>li>.inner {
+    display: flex;
+}
+
+ol.rating-list>li .nick-wrapper {
+    width: 55%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+ol.rating-list>li .score-wrapper {
+    min-width: 45px;
+    margin-left: auto;
+}
+
+ol.rating-list>li .label,
+ol.winners-list>li .label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+ol.rating-list>li .nick,
+ol.rating-list>li .score,
+ol.winners-list>li .nick,
+ol.winners-list>li .score {
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+ol.rating-list>li .place {
+    display: block;
+    width: 44px;
+    margin: auto 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+ol.rating-list>li:nth-child(-n+5) {
+    padding: 14px;
+    padding-right: 40px;
+    position: relative;
+    background-color: #597373;
+}
+
+ol.rating-list>li:nth-child(-n+5)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 49px;
+    height: 90%;
+    background-image: url(/assets/img/flag.png);
+    background-repeat: no-repeat;
+    background-position: -65px -112px;
+}
+
+ol.rating-list>li:nth-child(-n+5) .place {
+    width: 20px;
+    font-size: 32px;
+    line-height: 0.7;
+    margin: 0;
+    margin-bottom: auto;
+}
+
+ol.rating-list>li.current-player {
+    scroll-margin: 50vh 0 50vh 0;
+    background-color: #F37715;
+}
+
+.winner-avatar {
+    width: 48px;
+    height: 48px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+
+.hidden {
+    display: none;
+}
+
+.current-player-wrapper {
+    position: fixed;
+    z-index: 2;
+    max-width: 770px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 17px 14px 14px;
+
+}
+
+.current-player-wrapper::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: -20px;
+    right: -20px;
+    bottom: -50px;
+    background-image: url('/assets/img/current-player-bg-sm.png');
+    background-clip: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.current-player-title {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.current-player-score-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.current-player-score {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.current-player-actions-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    min-width: 110px;
+}
+
+.current-player-action {
+    width: 55px;
+    max-width: 0;
+    height: 35px;
+    position: relative;
+    background-image: url('/assets/img/btn-bg.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    transform: scale(0);
+    transition: filter .3s ease-in-out, transform .3s ease-in-out;
+}
+
+.current-player-action.ready {
+    max-width: 60px;
+    transform: scale(1);
+}
+
+.current-player-action>img {
+    position: absolute;
+    display: block;
+    inset: 0;
+    margin: auto;
+    transition: transform, .3s ease-in-out;
+}
+
+.current-player-action:hover {
+    filter: brightness(0.9);
+}
+
+.current-player-action.up>img {
+    transform: rotateX(180deg);
+}
+
+
+#scroll-to-me-link,
+#scroll-up-link {
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+}
+
+.current-player--ancor {
+    position: absolute;
+    inset: 0;
+}
+
+/* winners */
+section.winners {
+    margin-bottom: 40px;
+    padding-top: 40px;
+}
+
+section.winners .winners-container {
+    padding-right: 0;
+}
+
+section.winners .title {
+    position: relative;
+    padding-left: 32px;
+}
+
+section.winners .title::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url('/assets/img/cup.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px 21px;
+}
+
+.winners-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 12px;
+    overflow-y: scroll;
+}
+
+.winners-list::-webkit-scrollbar {
+    display: none;
+}
+
+.winners-list {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+ol.winners-list li.item {
+    padding-top: 52px;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+ol.winners-list li.item .inner {
+    width: 122px;
+    padding: 74px 10px 10px;
+    position: relative;
+    background-color: #597373;
+    background-image: url('/assets/img/winners-flag.png');
+    background-repeat: no-repeat;
+    background-position: -74px -119px;
+    border-radius: 8px;
+}
+
+ol.winners-list li .winner-avatar {
+    width: 87px;
+    height: 87px;
+    overflow: hidden;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    background-color: #161D1D;
+}
+
+ol.winners-list>li .nick-wrapper {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+ol.winners-list>li .nick-wrapper,
+ol.winners-list>li .score-wrapper {
+    min-height: 32px;
+}
+
+ol.winners-list>li .nick-wrapper {
+    margin-bottom: 5px;
+}
+
+ol.winners-list>li .place {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    right: -20px;
+    bottom: -20px;
+    padding-top: 10px;
+    padding-left: 25px;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+@media (min-width: 850px) {
+
+    .rating-list-wrapper {
+        padding-bottom: 90px;
+    }
+
+    ol.rating-list>li {
+        padding-right: 140px;
+    }
+
+    ol.rating-list>li .place {
+        font-size: 40px;
+        width: 106px;
+    }
+
+    ol.rating-list>li .score-wrapper {
+        min-width: 72px;
+    }
+
+    ol.rating-list>li .label {
+        font-size: 18px;
+    }
+
+    ol.rating-list>li .nick,
+    ol.rating-list>li .score {
+        font-size: 20px;
+    }
+
+    ol.rating-list>li:nth-child(-n+5) .place {
+        font-size: 36px;
+    }
+
+    ol.rating-list>li:nth-child(-n+5) {
+        padding-right: 140px;
+    }
+
+    ol.rating-list>li:nth-child(-n+5)::before {
+        width: 100px;
+        background-position: -70px -157px;
+    }
+
+    .current-player-wrapper {
+        padding: 36px 73px 13px;
+    }
+
+    .current-player-title {
+        font-size: 32px;
+    }
+
+    .current-player-score {
+        font-size: 20px;
+    }
+
+    .current-player-actions-wrapper {
+        min-width: 125px;
+    }
+
+    .current-player-action {
+        width: 60px;
+        height: 40px;
+    }
+
+    /* winners */
+    section.winners {
+        margin-bottom: 50px;
+        padding-top: 50px;
+    }
+
+    section.winners .title::before {
+        background-size: 26px 36px;
+    }
+
+    ol.winners-list>li.item .inner {
+        padding-bottom: 20px;
+    }
+
+    ol.winners-list>li .nick-wrapper,
+    ol.winners-list>li .score-wrapper {
+        min-height: 42px;
+    }
+
+    ol.winners-list>li .label,
+    ol.winners-list>li .nick,
+    ol.winners-list>li .score {
+        font-size: 16px;
+    }
+
+    ol.winners-list>li.item .place {
+        right: -16px;
+        bottom: -16px;
+        padding-top: 7px;
+        padding-left: 20px;
+        font-size: 36px;
+    }
+}
