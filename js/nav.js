@@ -42,7 +42,7 @@ const createAnchor = (current) => {
             currentPlayerAction.classList.remove('ready'); 
         });
         window.addEventListener('scroll', () => {
-            if (window.scrollY < 500) {
+            if (window.scrollY === 0) {
                 currentPlayerAction.classList.add('ready'); 
             }
         })
