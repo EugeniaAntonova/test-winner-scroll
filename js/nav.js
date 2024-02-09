@@ -34,7 +34,7 @@ const createAnchor = (current) => {
     const anchor = document.createElement('a');
     anchor.id = 'scroll-to-me-link';
     anchor.href = '#current-in-the-list';
-
+    
     if (current.place <= 100 && current.place > 5) {
         currentPlayerAction.append(anchor);
         currentPlayerAction.classList.add('ready');
@@ -46,6 +46,11 @@ const createAnchor = (current) => {
                 currentPlayerAction.classList.add('ready'); 
             }
         })
+        const observer = new IntersectionObserver(() => {
+            currentPlayerAction.classList.remove('ready');
+        }, {threshold: 1,});
+    
+        observer.observe(document.querySelector('#current-in-the-list'));
     }
 }
 
