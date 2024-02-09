@@ -5,6 +5,7 @@ const currentPlayerPlace = document.querySelector('.current-player-place');
 const playersList = document.querySelector('.rating-list');
 const playerTemplate = document.querySelector('#player-template').content;
 const winnersList = document.querySelector('.winners-list');
+const upButton = document.querySelector('.current-player-action.up');
 
 const createPlayer = (data) => {
     const { nick, place, score } = data;
@@ -15,8 +16,6 @@ const createPlayer = (data) => {
 
     return player;
 }
-
-const upButton = document.querySelector('.current-player-action.up');
 
 window.onscroll = () => {
   if (window.scrollY > 500) {
