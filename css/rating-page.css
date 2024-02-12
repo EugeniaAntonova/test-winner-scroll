@@ -225,15 +225,23 @@ ol.rating-list>li.current-player {
 .current-player-actions-wrapper {
     display: flex;
     justify-content: flex-end;
-    min-width: 110px;
+    min-width: 100px;
 }
 
 .current-player-action {
-    width: 55px;
+    width: 100%;
     max-width: 0;
-    height: 35px;
+    height: 40px;
     position: relative;
-    background-image: url('../assets/img/btn-bg.svg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #161D1D;
+    background-image: url('/assets/img/to-me-bg.png');
     background-repeat: no-repeat;
     background-size: contain;
     cursor: pointer;
@@ -242,7 +250,7 @@ ol.rating-list>li.current-player {
 }
 
 .current-player-action.ready {
-    max-width: 60px;
+    max-width: 100%;
     transform: scale(1);
 }
 
@@ -322,15 +330,15 @@ section.winners .title::before {
 }
 
 ol.winners-list li.item {
-    padding-top: 52px;
+    padding-top: 42px;
     border-radius: 8px;
     overflow: hidden;
     flex-shrink: 0;
 }
 
 ol.winners-list li.item .inner {
-    width: 122px;
-    padding: 74px 10px 10px;
+    width: 112px;
+    padding: 74px 10px 32px;
     position: relative;
     background-color: #597373;
     background-image: url('../assets/img/winners-flag.png');
@@ -349,7 +357,7 @@ ol.winners-list li .winner-avatar {
     left: 0;
     right: 0;
     margin: 0 auto;
-    transform: translateY(-50%);
+    transform: translateY(-48%);
     background-color: #161D1D;
 }
 
@@ -357,15 +365,7 @@ ol.winners-list>li .nick-wrapper {
     width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
-}
-
-ol.winners-list>li .nick-wrapper,
-ol.winners-list>li .score-wrapper {
-    min-height: 32px;
-}
-
-ol.winners-list>li .nick-wrapper {
-    margin-bottom: 5px;
+    min-height: 38px;
 }
 
 ol.winners-list>li .place {
@@ -374,10 +374,10 @@ ol.winners-list>li .place {
     height: 64px;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.5);
-    right: -20px;
-    bottom: -20px;
-    padding-top: 10px;
-    padding-left: 25px;
+    right: -30px;
+    bottom: -30px;
+    padding-top: 5px;
+    padding-left: 15px;
     font-size: 24px;
     font-weight: 800;
 }

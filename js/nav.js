@@ -4,8 +4,8 @@ const currentPlayerScore = document.querySelector('.current-player-score');
 const currentPlayerPlace = document.querySelector('.current-player-place');
 const playersList = document.querySelector('.rating-list');
 const playerTemplate = document.querySelector('#player-template').content;
+const winnerTemplate = document.querySelector('#winner-template').content;
 const winnersList = document.querySelector('.winners-list');
-const upButton = document.querySelector('.current-player-action.up');
 
 const createPlayer = (data) => {
     const { nick, place, score } = data;
@@ -16,14 +16,14 @@ const createPlayer = (data) => {
 
     return player;
 }
+const createWinner = (data) => {
+    const { nick, place } = data;
+    const winner = winnerTemplate.cloneNode(true);
+    winner.querySelector('.nick').textContent = nick;
+    winner.querySelector('.place').textContent = place;
 
-window.onscroll = () => {
-  if (window.scrollY > 500) {
-    upButton.classList.add('ready');
-  } else {
-    upButton.classList.remove('ready');
-  }
-};
+    return winner;
+}
 
 const createAnchor = (current) => {
     let players = playersList.children;
@@ -37,38 +37,41 @@ const createAnchor = (current) => {
     if (current.place <= 100 && current.place > 5) {
         currentPlayerAction.append(anchor);
         currentPlayerAction.classList.add('ready');
-        currentPlayerAction.addEventListener('click', () => {
-            currentPlayerAction.classList.remove('ready'); 
-        });
+
+        const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                currentPlayerAction.classList.remove('ready');
+            }
+        }, {threshold: 1, rootMargin: "-150px",});
+        
         window.addEventListener('scroll', () => {
-            if (window.scrollY === 0) {
+            if (window.scrollY < 500) {
                 currentPlayerAction.classList.add('ready'); 
             }
+            
+            observer.observe(document.querySelector('#current-in-the-list'));
         })
-        const observer = new IntersectionObserver(() => {
-            currentPlayerAction.classList.remove('ready');
-        }, {threshold: 1,});
-    
-        observer.observe(document.querySelector('#current-in-the-list'));
     }
 }
 
-
-const onSuccess = (data, current, cb) => {
+// не забыть сфетчить предыдущих победителей!!!!!!!
+const onSuccessPlayers = (data, current, cb) => {
     data.forEach(element => {
         const player = cb(element);
         playersList.appendChild(player);
     });
 
-    const winners = data.slice(0,5);
-    winners.forEach(item => {
-        const winner = cb(item);
-        winnersList.appendChild(winner);
-    })
-
     currentPlayerPlace.textContent = current.place;
     currentPlayerScore.textContent = current.score;
     createAnchor(current);
+}
+
+const onSuccessWinners = (data, cb) => {
+    const winners = data.slice(0, 5);
+    winners.forEach(element => {
+        const winner = cb(element);
+        winnersList.appendChild(winner);
+    });
 }
 
 const onFail = (err) => {
@@ -93,5 +96,24 @@ const getData = async (onSuccess, onFail, cb) => {
     }
 };
 
-getData(onSuccess, onFail, createPlayer)
+const getPrevWinners = async (onSuccess, onFail, cb) => {
+    try {
+        const response = await fetch(
+            './data.json'
+        );
+
+        if (!response.ok) {
+            throw new Error('Не удалось получить данные');
+        }
+
+        const resp = await response.json();
+        const data = resp.data;
+        onSuccess(data, cb);
+    } catch (error) {
+        onFail(error.message);
+    }
+};
+
+getData(onSuccessPlayers, onFail, createPlayer);
+getPrevWinners(onSuccessWinners, onFail, createWinner);
   
